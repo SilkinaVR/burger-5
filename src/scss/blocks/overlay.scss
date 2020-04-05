@@ -1,0 +1,44 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #0005;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    .feed__name{
+        padding:  2.25rem 0;
+    }
+    &--active{
+        display: flex;
+    }
+}
+.overlay__item{
+
+ display: none;
+ &--active{
+     display: flex;
+ }
+}
+.border{
+    position: relative;
+  width: 25rem;
+  background: #444;
+  color: white;
+  text-align: center;
+}
+// .overlay__close{
+//     position: absolute;
+//     right: 5%;
+//     top: 5%;
+//     padding-bottom: 5px;
+// }
+.fixed {
+    position:fixed; /*позицианируем чтобы исчез скролл*/
+    width:100%; /*что бы верстка не складывалась по ширине*/
+        
+}

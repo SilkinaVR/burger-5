@@ -1,0 +1,25 @@
+.section-video {
+  background: url("../img/vd.png") center center/cover no-repeat;
+  text-align: center;
+}
+.section-video .text__title {
+  color: black;
+}
+
+.video-play {
+  width: 37.5rem;
+  height: 25rem;
+  outline: none;
+}
+
+.video-conteiner {
+  position: relative;
+}
+
+.video-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+}

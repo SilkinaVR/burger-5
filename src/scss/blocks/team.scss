@@ -1,0 +1,194 @@
+.team{
+    position: relative;
+    background:  url('../img/team_cover.png') center center/ cover no-repeat;
+}
+.accordion-team{
+    width: 70%;
+    @include tablets{
+        width: 45%;
+
+    }
+}
+.background__team{
+    position: absolute ;
+    left: 50%;
+    top:0;
+    bottom: 0;
+    right: 0;
+
+    width: 50%;
+    // height: 100%;
+    display: flex;
+    // flex-direction: column;
+    justify-content: center;
+    background: rgba(49,52,54, 0.8);
+    @include tablets{
+        left: 0;
+        width: 100%;
+        text-align: center;
+
+    }
+
+}
+.accordion-team__item{
+    // display: flex;
+    color: $white;
+    font-size: 0.875rem;
+
+    &-name{
+        font-family:  'gagalinregular',sans-serif;
+        padding-bottom: 1.0625rem;
+        padding-left: 0.625rem;
+        width: 100%
+        
+    }
+    &:hover{
+        cursor: pointer;
+        .accordion-team__item-name{
+            color: $orange;
+        }
+    }
+    &--active{
+        cursor: pointer;
+        // height: 9.375rem;
+        // @include tablets{
+        //     height: 13.875rem;
+        // }
+        height: 168px;
+        @include tablets{
+        height: 208px;
+        }
+        @include mobile{
+        
+            height: 188px;
+        }
+        .accordion-team__content{
+            height: 6.875rem;
+            transition: 0.6s height;
+            @include tablets{
+                display: inline-flex;
+                // margin-top: 33%;
+                flex-direction: column;
+                height: 186px;
+            }
+           
+
+        }
+        .accordion-team__item-name{
+            color: $orange;
+        }
+        .accordion-team__item-triangle{
+            transform: rotate(180deg);
+        }
+    }
+}
+// .accordion-team__item--active{
+   
+//         height: 168px;
+//         @include tablets{
+        
+//             height: 209px;
+//         }
+//         @include mobile{
+        
+//             height: 188px;
+//         }
+   
+// .accordion-team__content{
+//      height: 6.875rem;
+//      @include tablets{
+//                 display: inline-flex;
+//                 // margin-top: 33%;
+//                 flex-direction: column;
+//                 height: 186px;
+//             }
+          
+
+// }
+// .accordion-team__item-name{
+//     color: $orange;
+// }
+// .accordion-team__item-triangle{
+//     transform: rotate(180deg);
+// }
+    
+// }
+.text__title--team{
+margin-top: 20%;
+margin-bottom: 1.4375rem;
+display: flex;
+@include tablets{
+   margin-top: 33%;
+   justify-content: center;
+}
+}
+.accordion-team__title{
+    display: flex;
+    @include tablets{
+        display: inline-flex;
+        // margin-top: 33%;
+    }
+   
+}
+.accordion-team__item-triangle{
+    border-top: 0.5rem solid $orange;
+    border-left: 0.25rem solid transparent;
+    border-right: 0.25rem solid transparent;
+    /* border-bottom: rem(rem(0px)) solid black; */
+    height: 100%;
+    margin-top: 0.3125rem;
+    margin-right:  0.3125rem;
+}
+
+
+.accordion-team__content-text{
+    margin-left: 30px;
+
+    @include tablets{
+        margin-left: 0;
+    }
+
+   
+}
+.accordion-team__content{
+    display: flex;
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+ 
+    &-title{
+        font-family:  'ubuntubold',sans-serif;
+        padding-bottom: 0.8125rem;
+    }
+    &-paragraph{
+        font-family:  'ubuntulight',sans-serif;
+        font-size: 0.875rem;
+    }
+ 
+}
+.team__photo{
+    // width: rem(rem(150px));
+    // height: rem(rem(150px));
+    // background: url('../img/aphex.png') center center / cover no-repeat;
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    flex-shrink: 0;
+    // background: url('../img/aphex.png') center center / cover no-repeat;
+   
+}
+.accordion-team__content-foto{
+   
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include tablets{
+        margin-bottom: 20px;
+    }
+
+}

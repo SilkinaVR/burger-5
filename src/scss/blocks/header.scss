@@ -1,0 +1,71 @@
+
+// .logo{
+//   // width: 70px;
+//   width: 4.375rem;
+// }
+.logo__pic{
+  width: 5.5rem;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.6rem;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+.btn{
+  display: flex;
+     .button{margin-right: 1.25rem;
+
+    
+  }
+}
+.breadcrubs{
+    color: white;
+    // padding-left: 120px;
+    @include tablets{
+      display: none;
+    }
+    
+    
+  
+  }
+  .breadcrubs__list{
+    display: flex;
+    list-style: disc;
+    // padding-left: 77px;
+    padding-left: 3.125rem;
+    padding-right: 1rem;
+    /* justify-content
+     space-between; */
+     @include tablets{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .breadcrubs__item{
+    // padding-right: 34px;
+    padding-right: 2.125rem;
+    text-transform: uppercase;
+    font-family: 'ubuntumedium', sans-serif;
+    /* font-weight: bold; */
+    // font-size: 13px;
+    font-size: 0.8125rem;
+  
+  }
+  .breadcrubs__item:first-child{
+    list-style: none;
+    @include tablets{
+      list-style: disc;
+    }
+    
+  }
+  .breadcrubs__item:last-child{
+    // padding-right: 5px;
+    padding-right: 0.3125rem;
+  }
+  .breadcrubs__item-link{
+    color: white;
+  }

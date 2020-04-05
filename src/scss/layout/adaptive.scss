@@ -1,0 +1,61 @@
+
+// @media (min-width: 769px){
+//     .feed__item{
+//     width: calc(100%/4);
+//     }
+//     .conteiner{
+//         background: plum;
+//     }
+// }
+// @function rem($px) {
+//     @return $px/16px+0rem;
+//   }
+@mixin tablets {
+    @media screen and (max-width: 768px){
+        @content;
+    }
+}
+@mixin mobile {
+    @media screen and (max-width: 480px){
+        @content;
+    }
+}
+
+// @media (max-width: 768px){
+//     html{
+//         font-size: 14px;
+//     }
+//     .conteiner--welcome{max-width: 450px;
+      
+//     }
+
+//     .main{
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//     }
+//     .breadcrubs__list{
+//         display: flex;
+//         flex-direction: column;
+    
+//     }
+//     .breadcrubs__item:first-child{
+//         list-style: disc;
+//       }
+//       .feed__item{
+//         width: calc(100%/2);
+//     }
+
+// }
+// @media (max-width: 480px){
+//     html{
+//         font-size: 12px;
+//     }
+//     .conteiner--welcome{max-width: 350px;      
+//     }
+//     .feed__item{
+//         width: 100%;
+//     }
+    
+// }
+

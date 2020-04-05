@@ -1,0 +1,20 @@
+.delivery {
+  background: url("../img/chalkboard.png") center center/cover no-repeat;
+}
+
+.delivery__textere {
+  height: 100%;
+  background: url("../img/bg-texture.png") center center/cover no-repeat;
+}
+
+.conteiner-delivery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.conteiner-delivery .text__title {
+  padding-top: 2.8125rem;
+  text-align: center;
+}

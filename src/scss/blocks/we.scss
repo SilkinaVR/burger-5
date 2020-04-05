@@ -1,0 +1,73 @@
+.we{
+    background: url('../img/bg.png') center center/ cover no-repeat;
+}
+.conteiner--we{
+    // width: 1100px;
+    // margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 4.5625rem;
+    padding-right: 4.1875rem;
+
+}
+.content{
+    // list-style: none;
+    display: flex;
+    text-align: center;
+    padding-top: 2.5rem;
+
+    @include mobile{
+       flex-direction: column;
+    }
+
+
+}
+// .text__title{
+// text-align: center;
+// margin-bottom: 3.125rem;
+// }
+.content__icon{
+    height: 6.25rem;
+    margin-bottom: 1.0625rem;
+
+    // background: url('../img/hand.png') center center no-repeat;
+}
+.we__title{
+    
+    // padding-top: 122px;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    font-family: 'gagalinregular',sans-serif;
+    text-align: center;
+   
+}
+.content__block{
+    @include mobile{
+    width: 100%;
+    text-align: left;
+    }
+}
+.content__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: calc(100% / 3);
+    margin-right: 0.3125rem;
+    @include mobile{
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 7%;
+     }
+ 
+}
+.content__title{
+    padding-bottom: 1.1875rem;
+    font-family: 'lifehackmedium';
+    font-size: 1.5rem;
+    width: 100%;
+}
+.content__text{
+    font-size: 0.875rem;
+    line-height: 1.6;
+}

@@ -1,0 +1,42 @@
+.popup {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #0008;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.popup .feed__name {
+  padding-top: 1.25rem;
+}
+.popup--active {
+  display: flex;
+}
+
+.popup__content {
+  background: white;
+  width: 28.75rem;
+  opacity: 1;
+  position: relative;
+}
+
+.close__link {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+}
+
+.popup__content {
+  padding-left: 20px;
+}
+
+.popup__text {
+  font-size: 0.875rem;
+  font-family: "ubunturegular", sans-serif;
+  line-height: 2;
+  padding: 1.25rem 0;
+}

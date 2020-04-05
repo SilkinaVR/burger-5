@@ -1,0 +1,99 @@
+.menu{
+    position: relative;
+    background: url('../img/menu.png') center center / cover no-repeat;  
+    color: white;
+
+    .text__title,  .accordion-menu__title{
+        color: white;
+    }
+    .text__title{
+        position: absolute ;
+        top: 5.25rem;
+        left: 2.625rem;
+        @include tablets{
+            left: 1.625rem;
+        }
+        
+    }
+
+}
+.accordion-menu{
+    display: flex;
+    position: absolute ;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.accordion-menu__list{
+    display: flex;
+}
+
+.accordion-menu__item{
+    display: flex;
+    cursor: pointer;
+    &--active{
+        .accordion-menu__content{
+            width: 33.75rem;
+            @include mobile{
+                width: calc(100vw - 197px);
+            }
+        }
+        .accordion-menu__title-text{
+            color: $orange;
+        }
+    }
+}
+
+
+.accordion-menu__title{
+    width: 5rem;
+    flex: 0 0 auto;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+
+
+    &--one{
+        background-image: url('../img/acc_1.png')  ;
+    }
+    &--two{
+        background-image: url('../img/acc_2.png')  ;
+    }
+    &--three{
+        background-image: url('../img/acc_3.png')  ;
+    }
+  
+
+}
+.accordion-menu__title-text{
+    position: absolute ;
+    bottom: 0;
+    left: 50%;
+    transform: rotate(-90deg) translate(0, -50%);
+    font-family:  'gagalinregular',sans-serif;
+    font-size: 2.5rem;
+    transform-origin: 0 0;
+    white-space: nowrap;
+}
+
+.accordion-menu__content{
+    background-color: rgba(47, 50, 52,  0.929);
+    width: 0;
+    overflow: hidden;
+    transition: 0.3s width;
+
+    &-text{
+        font-family:  'ubuntulight',sans-serif;
+        font-size: 0.875rem;
+        line-height: 2;
+        padding: 3.125rem 1.875rem;
+        // width: 33.75rem;
+        // @include mobile{
+        //     width: 16.875rem;
+        // }
+    }
+}
+
+
+  
