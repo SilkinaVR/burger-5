@@ -234,19 +234,19 @@ function ready() {
     popupClose.addEventListener('click', closePopup);
     popup.addEventListener('click', closePopup);
     
-// //------button---------
-let butclick= (e) => {
-    // e.preventDefault();
-    console.log('ff');
-//    e.style.outline="none";
-   for (let i = 0; i < but.length; i++) {
-    but[i].style.outline="none";
-}
-}
-const but = document.getElementsByClassName("button");
-for (let i = 0; i < but.length; i++) {
-    but[i].addEventListener('click', butclick);
-}
+// // //------button---------
+// let butclick= (e) => {
+//     // e.preventDefault();
+//     console.log('ff');
+// //    e.style.outline="none";
+//    for (let i = 0; i < but.length; i++) {
+//     but[i].style.outline="none";
+// }
+// }
+// const but = document.getElementsByClassName("button");
+// for (let i = 0; i < but.length; i++) {
+//     but[i].addEventListener('click', butclick);
+// }
 
 
 //---------------video----------
@@ -262,7 +262,7 @@ let videoClick= (e) => {
         }
         
 }
-const video = document.getElementById('video');
+const video = document.getElementById('video-pl');
 const videoImg = document.getElementById('video-img');
 
 videoImg.addEventListener('click', videoClick);
