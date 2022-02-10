@@ -31,7 +31,7 @@
     "gulp-uglify": "^3.0.0"
   },
   "dependencies": {
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "svg4everybody": "^2.1.9"
   }
 }
